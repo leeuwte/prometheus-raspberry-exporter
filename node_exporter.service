@@ -1,0 +1,9 @@
+[Unit]
+Description=Node Exporter on Raspberry Pi for Prometheus
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/node_exporter --collector.textfile --collector.textfile.directory=/var/lib/node_exporter/textfile_collector
+
+[Install]
+WantedBy=multi-user.target
