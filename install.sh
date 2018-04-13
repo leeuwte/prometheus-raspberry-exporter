@@ -1,4 +1,4 @@
-#curl -SL https://github.com/prometheus/node_exporter/releases/download/v0.15.2/node_exporter-0.15.2.linux-armv7.tar.gz > /tmp/node_exporter.tar.gz && \
+curl -SL https://github.com/prometheus/node_exporter/releases/download/v0.15.2/node_exporter-0.15.2.linux-armv7.tar.gz > /tmp/node_exporter.tar.gz && \
 sudo tar -xvf /tmp/node_exporter.tar.gz -C /usr/local/bin/ --strip-components=1
 
 sudo cp node_exporter.service /etc/systemd/system/
